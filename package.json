@@ -4,13 +4,13 @@
   "description": "A simple Youtube extension that compresses video audio sound levels",
   "license": "MIT",
   "author": "DanCodes <dan@dancodes.online>",
-  "homepage": "https://github.com/rossmoody/ts-extension-starter#readme",
+  "homepage": "https://github.com/dan-online/youtubeaudiocompressor#readme",
   "bugs": {
-    "url": "https://github.com/rossmoody/ts-extension-starter/issues"
+    "url": "https://github.com/dan-online/youtubeaudiocompressor/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rossmoody/ts-extension-starter.git"
+    "url": "git+https://github.com/dan-online/youtubeaudiocompressor.git"
   },
   "scripts": {
     "build": "rollup -c",
