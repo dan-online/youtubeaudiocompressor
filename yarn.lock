@@ -3540,7 +3540,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.72.1, rollup@npm:^2.79.1":
+"rollup@npm:^2.72.1":
   version: 2.79.1
   resolution: "rollup@npm:2.79.1"
   dependencies:
@@ -3551,6 +3551,20 @@ __metadata:
   bin:
     rollup: dist/bin/rollup
   checksum: 6a2bf167b3587d4df709b37d149ad0300692cc5deb510f89ac7bdc77c8738c9546ae3de9322b0968e1ed2b0e984571f5f55aae28fa7de4cfcb1bc5402a4e2be6
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^3.2.2":
+  version: 3.2.2
+  resolution: "rollup@npm:3.2.2"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: c4de594630348d3dab98262c95df8b3e206abde2f9b885ee703fd33e106988a255c051c2f1ea200403365803be1e097f5ade8e220220a3179f89f4589847c69e
   languageName: node
   linkType: hard
 
@@ -4082,7 +4096,7 @@ __metadata:
     eslint: ^8.25.0
     eslint-plugin-react: ^7.31.10
     prettier: ^2.7.1
-    rollup: ^2.79.1
+    rollup: ^3.2.2
     rollup-plugin-chrome-extension: ^3.6.10
     rollup-plugin-empty-dir: ^1.0.5
     rollup-plugin-zip: ^1.0.3
