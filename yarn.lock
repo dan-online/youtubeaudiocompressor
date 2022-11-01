@@ -259,13 +259,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chrome@npm:^0.0.199":
-  version: 0.0.199
-  resolution: "@types/chrome@npm:0.0.199"
+"@types/chrome@npm:^0.0.200":
+  version: 0.0.200
+  resolution: "@types/chrome@npm:0.0.200"
   dependencies:
     "@types/filesystem": "*"
     "@types/har-format": "*"
-  checksum: d309e488452655f5b3d2ae9cefe98695b4eb664183db3e23a9a1da9d75baf463bcff5e4c5bd16ed164af7994a8dde6ce174c5462861fcabccbcd554e1bb59067
+  checksum: 8e34ead6be66f00b7df8a2f6543599e3f2cc9b414a06c9193fb043cdb7e88750b96f162a287aca8c67007dc0c07ce5af26dcdd8716921bb4170bdcb76d5e2a68
   languageName: node
   linkType: hard
 
@@ -334,7 +334,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.33.1, @typescript-eslint/eslint-plugin@npm:^5.41.0":
+"@typescript-eslint/eslint-plugin@npm:^5.33.1, @typescript-eslint/eslint-plugin@npm:^5.42.0":
   version: 5.42.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.42.0"
   dependencies:
@@ -357,7 +357,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.33.1, @typescript-eslint/parser@npm:^5.41.0":
+"@typescript-eslint/parser@npm:^5.33.1, @typescript-eslint/parser@npm:^5.42.0":
   version: 5.42.0
   resolution: "@typescript-eslint/parser@npm:5.42.0"
   dependencies:
@@ -2907,7 +2907,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.2.3":
+"rollup@npm:^3.2.5":
   version: 3.2.5
   resolution: "rollup@npm:3.2.5"
   dependencies:
@@ -3158,7 +3158,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.4.0":
+"tslib@npm:^2.4.0, tslib@npm:^2.4.1":
   version: 2.4.1
   resolution: "tslib@npm:2.4.1"
   checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
@@ -3340,17 +3340,17 @@ __metadata:
     "@rollup/plugin-replace": ^5.0.1
     "@rollup/plugin-typescript": ^9.0.2
     "@sapphire/eslint-config": ^4.3.8
-    "@types/chrome": ^0.0.199
-    "@typescript-eslint/eslint-plugin": ^5.41.0
-    "@typescript-eslint/parser": ^5.41.0
+    "@types/chrome": ^0.0.200
+    "@typescript-eslint/eslint-plugin": ^5.42.0
+    "@typescript-eslint/parser": ^5.42.0
     esbuild: ^0.15.12
     eslint: ^8.26.0
     prettier: ^2.7.1
-    rollup: ^3.2.3
+    rollup: ^3.2.5
     rollup-plugin-chrome-extension: ^3.6.10
     rollup-plugin-empty-dir: ^1.0.5
     rollup-plugin-zip: ^1.0.3
-    tslib: ^2.4.0
+    tslib: ^2.4.1
     typescript: ^4.8.4
     webextension-polyfill: ^0.10.0
   languageName: unknown
