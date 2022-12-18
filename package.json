@@ -27,7 +27,7 @@
     "@types/chrome": "^0.0.204",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
-    "esbuild": "^0.16.8",
+    "esbuild": "^0.16.9",
     "eslint": "^8.30.0",
     "prettier": "^2.8.1",
     "rollup": "^3.7.5",
