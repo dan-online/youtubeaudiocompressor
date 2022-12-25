@@ -22,7 +22,7 @@ jobs:
       - name: Run ESLint
         run: yarn lint --fix=false
 
-  building:
+  development:
     name: Compile Source Code
     runs-on: ubuntu-latest
     steps:
@@ -39,8 +39,8 @@ jobs:
       - name: Compile Packages
         run: yarn build
 
-  building:
-    name: Compile Source Code
+  production:
+    name: Build Production File
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
