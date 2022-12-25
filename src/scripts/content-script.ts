@@ -66,12 +66,19 @@ async function updateCompression() {
   }
 }
 
-const button = document.createElement('button');
-button.innerHTML = icon;
-button.classList.add('ytp-button');
-button.setAttribute('title', 'Compress audio');
+function createButton() {
+  const button = document.createElement('button');
+  button.innerHTML = icon;
+  button.classList.add('ytp-button');
+  button.classList.add('ytp-button--compress');
+  button.setAttribute('aria-label', 'Compress audio');
+  button.setAttribute('title', 'Compress audio');
+  return button;
+}
 
-document.addEventListener('DOMContentLoaded', () => {
+const button = createButton();
+
+function run() {
   document.querySelector('.ytp-right-controls')?.prepend(button);
   button.addEventListener('click', async () => {
     const compress = await getIfCompress();
@@ -79,4 +86,17 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCompression();
   });
   updateCompression();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  run();
+});
+
+const i = setInterval(() => {
+  if (document.querySelector('.ytp-right-controls') && !document.querySelector('.ytp-button--compress')) {
+    run();
+  }
+}, 1000);
+window.addEventListener('unload', () => {
+  clearInterval(i);
 });

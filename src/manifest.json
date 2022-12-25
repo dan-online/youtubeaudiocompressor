@@ -4,7 +4,7 @@
   "permissions": ["activeTab", "storage"],
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/watch?v=*"],
+      "matches": ["https://www.youtube.com/watch?v=*", "https://www.youtube.com/*"],
       "js": ["scripts/content-script.ts"],
       "run_at": "document_start"
     }
