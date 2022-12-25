@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Youtube Audio Compressor",
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/watch?v=*", "https://www.youtube.com/*"],
