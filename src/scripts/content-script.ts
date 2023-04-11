@@ -67,9 +67,6 @@ async function updateCompression() {
 }
 
 function createButton() {
-  /*
-  <button class="ytp-subtitles-button ytp-button" aria-keyshortcuts="c" data-title-no-tooltip="Subtitles/closed captions" aria-label="Subtitles/closed captions keyboard shortcut c" aria-pressed="false" title="Subtitles/closed captions (c)"
-  */
   const button = document.createElement('button');
 
   button.innerHTML = icon;
