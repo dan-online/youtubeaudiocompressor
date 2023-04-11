@@ -67,36 +67,79 @@ async function updateCompression() {
 }
 
 function createButton() {
+  /*
+  <button class="ytp-subtitles-button ytp-button" aria-keyshortcuts="c" data-title-no-tooltip="Subtitles/closed captions" aria-label="Subtitles/closed captions keyboard shortcut c" aria-pressed="false" title="Subtitles/closed captions (c)"
+  */
   const button = document.createElement('button');
+
   button.innerHTML = icon;
   button.classList.add('ytp-button');
   button.classList.add('ytp-button--compress');
   button.setAttribute('aria-label', 'Compress audio');
   button.setAttribute('title', 'Compress audio');
+  button.setAttribute('aria-pressed', 'false');
+  button.setAttribute('aria-keyshortcuts', 'v');
+  button.setAttribute('data-title-no-tooltip', 'Compress audio');
+  button.setAttribute('title', 'Compress audio (v)');
+
   return button;
+}
+
+async function toggleCompression() {
+  const compress = await getIfCompress();
+  await setCompression(!compress);
+  updateCompression();
 }
 
 const button = createButton();
 
 function run() {
   document.querySelector('.ytp-right-controls')?.prepend(button);
-  button.addEventListener('click', async () => {
-    const compress = await getIfCompress();
-    await setCompression(!compress);
-    updateCompression();
+  button.addEventListener('click', () => {
+    toggleCompression();
+  });
+  let hoverInterval: number | undefined;
+  button.addEventListener('mouseover', () => {
+    hoverInterval = setInterval(() => {
+      const tooltip = document.querySelector<HTMLElement>('.ytp-tooltip');
+      if (tooltip) {
+        const tooltipText = tooltip.querySelector<HTMLElement>('.ytp-tooltip-text');
+        if (tooltipText) {
+          tooltip.style.display = '';
+          tooltip.querySelector<HTMLElement>('.ytp-tooltip-text');
+          tooltipText.innerText = 'Compress audio (v)';
+          tooltip.style.left = button.getBoundingClientRect().x - tooltip.getBoundingClientRect().width / 2 + 'px';
+        }
+      }
+    }, 100);
+  });
+  button.addEventListener('mouseleave', () => {
+    clearInterval(hoverInterval);
+    const tooltip = document.querySelector<HTMLElement>('.ytp-tooltip');
+    if (tooltip) {
+      tooltip.style.display = 'none';
+    }
   });
   updateCompression();
+
+  window.addEventListener('keypress', (e) => {
+    if (e.key === 'v' && !e.ctrlKey && !e.altKey && !e.shiftKey && !e.metaKey && document.activeElement?.tagName !== 'INPUT') {
+      toggleCompression();
+    }
+  });
+
+  const forceInterval = setInterval(() => {
+    if (document.querySelector('.ytp-right-controls') && !document.querySelector('.ytp-button--compress')) {
+      run();
+    }
+  }, 1000);
+
+  window.addEventListener('unload', () => {
+    clearInterval(forceInterval);
+    clearInterval(hoverInterval);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   run();
-});
-
-const i = setInterval(() => {
-  if (document.querySelector('.ytp-right-controls') && !document.querySelector('.ytp-button--compress')) {
-    run();
-  }
-}, 1000);
-window.addEventListener('unload', () => {
-  clearInterval(i);
 });
