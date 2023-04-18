@@ -578,13 +578,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chrome@npm:^0.0.231":
-  version: 0.0.231
-  resolution: "@types/chrome@npm:0.0.231"
+"@types/chrome@npm:^0.0.232":
+  version: 0.0.232
+  resolution: "@types/chrome@npm:0.0.232"
   dependencies:
     "@types/filesystem": "*"
     "@types/har-format": "*"
-  checksum: f9eca67d86a9e429aa6028a7a52e5c33557ed20b020a0fc42820382f1583d20aff04af8bb12659afaf6957580449c284a8bf8f8abf2279f4e150509aa02a5d80
+  checksum: ebd8ff2a4c9e1504088f73d82d22f0ebd283ae4043e079c1a5bc76ec23491a5d366fcf9c9edd7c81cfa1f10391929cdf7951333bba137110a87b9feff377b88e
   languageName: node
   linkType: hard
 
@@ -3075,9 +3075,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.20.5":
-  version: 3.20.5
-  resolution: "rollup@npm:3.20.5"
+"rollup@npm:^3.20.6":
+  version: 3.20.6
+  resolution: "rollup@npm:3.20.6"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -3085,7 +3085,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 5f154ea6835bd3700478d399f152237d190eb0ea48d75983f87da5e01f5f624a7264e163e0f2a5d84079d6a5d116c620f0d2bef34f757723406606b7d04fb6a9
+  checksum: fa30f1e1d214b8c62e631d3c181a75d61bc9c20fca38220d6f938bb3bf734a874e407cd641c90f550dc2b127df5029dfb3108be08934a654f1f40b50f368b0c2
   languageName: node
   linkType: hard
 
@@ -3508,13 +3508,13 @@ __metadata:
     "@rollup/plugin-replace": ^5.0.2
     "@rollup/plugin-typescript": ^11.1.0
     "@sapphire/eslint-config": ^4.4.1
-    "@types/chrome": ^0.0.231
+    "@types/chrome": ^0.0.232
     "@typescript-eslint/eslint-plugin": ^5.59.0
     "@typescript-eslint/parser": ^5.59.0
     esbuild: ^0.17.17
     eslint: ^8.38.0
     prettier: ^2.8.7
-    rollup: ^3.20.5
+    rollup: ^3.20.6
     rollup-plugin-chrome-extension: ^3.6.12
     rollup-plugin-empty-dir: ^1.0.5
     rollup-plugin-zip: ^1.0.3
