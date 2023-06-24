@@ -1,30 +1,30 @@
-name: Continuous Integration
+# name: Continuous Integration
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  production:
-    name: Build Production File
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3
-      - name: Setup Node
-        uses: josh-development/.github/setup-node@main
-        with:
-          version: 18
-      - name: Compile Packages
-        run: yarn build:prod
-      - name: Cliff
-        run: 
-      - name: Upload to Chrome Webstore
-        uses: mnao305/chrome-extension-upload@v4.0.1
-        with:
-          file-path: releases/*.zip
-          extension-id: hogefuga(extension id)
-          client-id: ${{ secrets.CLIENT_ID }}
-          client-secret: ${{ secrets.CLIENT_SECRET }}
-          refresh-token: ${{ secrets.REFRESH_TOKEN }}
+# jobs:
+#   production:
+#     name: Build Production File
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout Project
+#         uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3
+#       - name: Setup Node
+#         uses: josh-development/.github/setup-node@main
+#         with:
+#           version: 18
+#       - name: Compile Packages
+#         run: yarn build:prod
+#       - name: Cliff
+#         run: 
+#       - name: Upload to Chrome Webstore
+#         uses: mnao305/chrome-extension-upload@v4.0.1
+#         with:
+#           file-path: releases/*.zip
+#           extension-id: hogefuga(extension id)
+#           client-id: ${{ secrets.CLIENT_ID }}
+#           client-secret: ${{ secrets.CLIENT_SECRET }}
+#           refresh-token: ${{ secrets.REFRESH_TOKEN }}
