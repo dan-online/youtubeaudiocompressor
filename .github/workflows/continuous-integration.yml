@@ -55,7 +55,7 @@ jobs:
         run: yarn --immutable
       - name: Compile Packages
         run: yarn build:prod
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: youtubeaudiocompressor
           path: dist/
