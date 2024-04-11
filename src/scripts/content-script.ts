@@ -130,7 +130,8 @@ async function run() {
 			!e.altKey &&
 			!e.shiftKey &&
 			!e.metaKey &&
-			document.activeElement?.tagName !== "INPUT"
+      document.activeElement?.tagName !== "INPUT" &&
+      document.activeElement?.id !== "contenteditable-root"
 		) {
 			toggleCompression();
 		}
