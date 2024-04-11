@@ -117,4 +117,4 @@ dist
 .rollup.cache
 
 # Releases
-releases
+./releases
