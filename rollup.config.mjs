@@ -7,7 +7,6 @@ import typescript from '@rollup/plugin-typescript';
 import replace from '@rollup/plugin-replace';
 import { chromeExtension, simpleReloader } from 'rollup-plugin-chrome-extension';
 import { emptyDir } from 'rollup-plugin-empty-dir';
-import zip from 'rollup-plugin-zip';
 
 const isProduction = process.env.NODE_ENV === 'production';
 export default {
@@ -28,6 +27,5 @@ export default {
     commonjs(),
     typescript(),
     emptyDir(),
-    isProduction && zip({ dir: 'releases' })
   ]
 };

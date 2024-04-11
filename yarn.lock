@@ -1242,13 +1242,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer-crc32@npm:~0.2.3":
-  version: 0.2.13
-  resolution: "buffer-crc32@npm:0.2.13"
-  checksum: 10/06252347ae6daca3453b94e4b2f1d3754a3b146a111d81c68924c22d91889a40623264e95e67955b1cb4a68cbedf317abeabb5140a9766ed248973096db5ce1c
-  languageName: node
-  linkType: hard
-
 "buffer-from@npm:^1.0.0":
   version: 1.1.2
   resolution: "buffer-from@npm:1.1.2"
@@ -3631,17 +3624,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-zip@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "rollup-plugin-zip@npm:1.0.3"
-  dependencies:
-    yazl: "npm:^2.5.1"
-  peerDependencies:
-    rollup: ">=2.0.2"
-  checksum: 10/6e88fc08a9a31f1697c80f045cae80d17cf0b1d9f1a9c7c448285d8681c3009a4d3a10931e1e016378e1396b827687c89df2a946bc4d2595a362a45a2a2e21f9
-  languageName: node
-  linkType: hard
-
 "rollup@npm:^2.72.1":
   version: 2.79.1
   resolution: "rollup@npm:2.79.1"
@@ -4161,15 +4143,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yazl@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "yazl@npm:2.5.1"
-  dependencies:
-    buffer-crc32: "npm:~0.2.3"
-  checksum: 10/498ea4c6bca26130608c44db166e2f63b3437b94b7ad020ca0c161268d29517e8517146e91e51b78da100ad62feadc1a1a85aaa94aab0b2dc29b355ec75bc8f0
-  languageName: node
-  linkType: hard
-
 "yocto-queue@npm:^0.1.0":
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
@@ -4196,7 +4169,6 @@ __metadata:
     rollup: "npm:^4.14.1"
     rollup-plugin-chrome-extension: "npm:^3.6.12"
     rollup-plugin-empty-dir: "npm:^1.0.5"
-    rollup-plugin-zip: "npm:^1.0.3"
     tslib: "npm:^2.6.2"
     typescript: "npm:^5.4.5"
     webextension-polyfill: "npm:^0.10.0"

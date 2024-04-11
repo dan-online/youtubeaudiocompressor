@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "build:prod": "NODE_ENV=production rollup -c",
+    "build:prod": "NODE_ENV=production rollup -c && cd dist && zip -r ../releases/\"$npm_package_name\"-\"$npm_package_version\".zip .",
     "lint": "eslint src/**/*.ts",
     "start": "rollup -c -w"
   },
@@ -34,7 +34,6 @@
     "rollup": "^4.14.1",
     "rollup-plugin-chrome-extension": "^3.6.12",
     "rollup-plugin-empty-dir": "^1.0.5",
-    "rollup-plugin-zip": "^1.0.3",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5",
     "webextension-polyfill": "^0.10.0"
