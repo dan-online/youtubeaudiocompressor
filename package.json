@@ -15,7 +15,7 @@
   "scripts": {
     "build": "rollup -c",
     "build:prod": "NODE_ENV=production rollup -c && cd dist && zip -r ../releases/\"$npm_package_name\"-\"$npm_package_version\".zip .",
-    "lint": "eslint src/**/*.ts",
+    "lint": "biome check src/**/*.ts",
     "start": "rollup -c -w"
   },
   "devDependencies": {
@@ -41,5 +41,8 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "dependencies": {
+    "@biomejs/biome": "^1.6.4"
+  }
 }

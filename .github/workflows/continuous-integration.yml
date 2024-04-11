@@ -19,8 +19,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: yarn --immutable
-      - name: Run ESLint
-        run: yarn lint --fix=false
+      - name: Run Linting
+        run: yarn lint
 
   development:
     name: Compile Source Code

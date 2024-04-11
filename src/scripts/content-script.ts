@@ -58,10 +58,10 @@ async function updateCompression(compress: boolean) {
 		document.querySelectorAll("video").forEach(compressVideoNode);
 	} else {
 		button.setAttribute("aria-pressed", "false");
-		sources.forEach(({ source, compression, context }) => {
+		for (const { source, compression, context } of sources) {
 			source.disconnect(compression);
 			source.connect(context.destination);
-		});
+		}
 	}
 }
 
@@ -130,8 +130,8 @@ async function run() {
 			!e.altKey &&
 			!e.shiftKey &&
 			!e.metaKey &&
-      document.activeElement?.tagName !== "INPUT" &&
-      document.activeElement?.id !== "contenteditable-root"
+			document.activeElement?.tagName !== "INPUT" &&
+			document.activeElement?.id !== "contenteditable-root"
 		) {
 			toggleCompression();
 		}
