@@ -41,7 +41,7 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "packageManager": "yarn@4.3.0",
+  "packageManager": "yarn@4.3.1",
   "dependencies": {
     "@biomejs/biome": "^1.8.2"
   }
