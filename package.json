@@ -43,6 +43,6 @@
   },
   "packageManager": "yarn@4.3.1",
   "dependencies": {
-    "@biomejs/biome": "^1.8.2"
+    "@biomejs/biome": "^1.8.3"
   }
 }
