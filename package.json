@@ -23,7 +23,7 @@
     "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-replace": "^6.0.1",
-    "@rollup/plugin-typescript": "^11.1.6",
+    "@rollup/plugin-typescript": "^12.1.0",
     "@sapphire/eslint-config": "^5.0.5",
     "@types/chrome": "^0.0.272",
     "@typescript-eslint/eslint-plugin": "^8.7.0",
