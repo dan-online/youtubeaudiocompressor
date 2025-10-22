@@ -1,27 +1,30 @@
 {
-  "manifest_version": 3,
-  "name": "Youtube Audio Compressor",
-  "permissions": ["storage"],
-  "content_scripts": [
-    {
-      "matches": ["https://www.youtube.com/watch?v=*", "https://www.youtube.com/*"],
-      "js": ["scripts/content-script.ts"],
-      "run_at": "document_start"
-    }
-  ],
-  "icons": {
-    "16": "assets/icons/16.png",
-    "24": "assets/icons/24.png",
-    "32": "assets/icons/32.png",
-    "48": "assets/icons/48.png",
-    "64": "assets/icons/64.png",
-    "128": "assets/icons/128.png",
-    "256": "assets/icons/256.png",
-    "512": "assets/icons/512.png"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "youtubeaudiocompressor@dancodes.online"
-    }
-  }
+	"manifest_version": 3,
+	"name": "Youtube Audio Compressor",
+	"permissions": ["storage"],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.youtube.com/watch?v=*",
+				"https://www.youtube.com/*"
+			],
+			"js": ["scripts/content-script.ts"],
+			"run_at": "document_start"
+		}
+	],
+	"icons": {
+		"16": "assets/icons/16.png",
+		"24": "assets/icons/24.png",
+		"32": "assets/icons/32.png",
+		"48": "assets/icons/48.png",
+		"64": "assets/icons/64.png",
+		"128": "assets/icons/128.png",
+		"256": "assets/icons/256.png",
+		"512": "assets/icons/512.png"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "youtubeaudiocompressor@dancodes.online"
+		}
+	}
 }

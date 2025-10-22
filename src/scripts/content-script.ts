@@ -54,12 +54,13 @@ function setCompression(value: boolean): Promise<boolean> {
 
 async function updateCompression(compress: boolean) {
 	if (compress) {
-    button.setAttribute("aria-pressed", "true");
-    button.style.filter = "invert(86%) sepia(87%) saturate(5375%) hue-rotate(2deg) brightness(94%) contrast(125%)";
+		button.setAttribute("aria-pressed", "true");
+		button.style.filter =
+			"invert(86%) sepia(87%) saturate(5375%) hue-rotate(2deg) brightness(94%) contrast(125%)";
 		document.querySelectorAll("video").forEach(compressVideoNode);
 	} else {
-    button.setAttribute("aria-pressed", "false");
-    button.style.filter = "";
+		button.setAttribute("aria-pressed", "false");
+		button.style.filter = "";
 		for (const { source, compression, context } of sources) {
 			source.disconnect(compression);
 			source.connect(context.destination);
@@ -78,10 +79,10 @@ function createButton() {
 	button.setAttribute("aria-pressed", "false");
 	button.setAttribute("aria-keyshortcuts", "v");
 	button.setAttribute("data-title-no-tooltip", "Compress audio");
-  button.setAttribute("title", "Compress audio (v)");
-  button.style.display = "flex";
-  button.style.alignItems = "center";
-  button.style.justifyContent = "center";
+	button.setAttribute("title", "Compress audio (v)");
+	button.style.display = "flex";
+	button.style.alignItems = "center";
+	button.style.justifyContent = "center";
 
 	return button;
 }
