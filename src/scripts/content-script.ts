@@ -149,7 +149,7 @@ async function run() {
 
 	window.addEventListener("keydown", (e) => {
 		if (
-			e.key === "v" &&
+			(e.key === "v" || e.key === "b") &&
 			!e.ctrlKey &&
 			!e.altKey &&
 			!e.shiftKey &&
