@@ -155,9 +155,10 @@ async function run() {
 			!e.shiftKey &&
 			!e.metaKey &&
 			document.activeElement?.tagName !== "INPUT" &&
-			document.activeElement?.id !== "contenteditable-root"
+			document.activeElement?.id !== "contenteditable-root" &&
+			document.activeElement?.id !== "input" &&
+			!document.activeElement?.closest("#input-container")
 		) {
-			e.preventDefault();
 			toggleCompression();
 		}
 	});
