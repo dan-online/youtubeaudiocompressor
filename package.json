@@ -30,7 +30,7 @@
 		"@types/chrome": "^0.1.27",
 		"@typescript-eslint/eslint-plugin": "^8.46.3",
 		"@typescript-eslint/parser": "^8.46.3",
-		"esbuild": "^0.25.12",
+		"esbuild": "^0.26.0",
 		"eslint": "^9.39.1",
 		"prettier": "^3.6.2",
 		"rollup": "^4.53.1",
