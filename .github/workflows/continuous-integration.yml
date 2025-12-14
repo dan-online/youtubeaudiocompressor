@@ -57,7 +57,7 @@ jobs:
         run: yarn biome ci
       - name: Compile Packages
         run: yarn build:prod
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v6
         with:
           name: youtubeaudiocompressor
           path: dist/
