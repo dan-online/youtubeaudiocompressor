@@ -19,7 +19,7 @@
 		"start": "rollup -c -w"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.3.14",
+		"@biomejs/biome": "^2.3.15",
 		"@favware/cliff-jumper": "^6.0.0",
 		"@iconify-json/ph": "^1.2.2",
 		"@rollup/plugin-commonjs": "^29.0.0",
@@ -28,8 +28,8 @@
 		"@rollup/plugin-typescript": "^12.3.0",
 		"@sapphire/eslint-config": "^5.0.6",
 		"@types/chrome": "^0.1.36",
-		"@typescript-eslint/eslint-plugin": "^8.54.0",
-		"@typescript-eslint/parser": "^8.54.0",
+		"@typescript-eslint/eslint-plugin": "^8.55.0",
+		"@typescript-eslint/parser": "^8.55.0",
 		"esbuild": "^0.27.3",
 		"eslint": "^10.0.0",
 		"prettier": "^3.8.1",
