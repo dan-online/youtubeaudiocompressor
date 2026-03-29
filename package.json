@@ -37,7 +37,7 @@
 		"rollup-plugin-chrome-extension": "^3.6.15",
 		"rollup-plugin-empty-dir": "^1.0.5",
 		"tslib": "^2.8.1",
-		"typescript": "^5.9.3",
+		"typescript": "^6.0.2",
 		"unplugin-icons": "^23.0.1",
 		"webextension-polyfill": "^0.12.0"
 	},
